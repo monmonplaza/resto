@@ -1,0 +1,9 @@
+@mixin media-query($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin transistion($duration: 0.5s) {
+  transition: $duration ease;
+}
