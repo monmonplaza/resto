@@ -526,7 +526,7 @@ body {
 }
 
 .bestseller__nav {
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto;
 }
 
@@ -542,18 +542,38 @@ body {
 }
 
 .bestseller__navItem img {
-  margin-bottom: 1rem;
+  width: 12rem;
+  margin: 0 auto 1rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.bestseller__navItem h2 {
+  text-align: center;
+}
+
+.bestseller__navItem:hover img {
+  width: 14rem;
 }
 
 .slick-prev::before {
-  font-family: "Font Awesome 5 Free ";
-  content: "\f007";
-  font-size: 22px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f359";
+  font-size: 4rem;
+  color: #f57032;
+  display: block;
 }
 
 .slick-next::before {
-  font-family: "Font Awesome 5 Free ";
-  content: "\f1ea";
-  font-size: 22px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f35a";
+  font-size: 4rem;
+  color: #f57032;
+  display: block;
+}
+
+.slick-next,
+.slick-prev {
+  top: 50px;
 }
 /*# sourceMappingURL=main.min.css.map */

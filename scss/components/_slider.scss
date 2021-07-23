@@ -52,7 +52,7 @@
   }
 
   &__nav {
-    width: 70vw;
+    width: 60vw;
     margin: 0 auto;
     .slick-list {
       padding: 0 !important;
@@ -63,7 +63,17 @@
     display: flex;
     cursor: pointer;
     img {
-      margin-bottom: 1rem;
+      width: 12rem;
+      margin: 0 auto 1rem;
+      transition: 0.5s ease;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  &__navItem:hover {
+    img {
+      width: 14rem;
     }
   }
 }
@@ -71,12 +81,21 @@
 // SLICK SLIDER
 
 .slick-prev::before {
-  font-family: "Font Awesome 5 Free ";
-  content: "\f007";
-  font-size: 22px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f359";
+  font-size: 4rem;
+  color: $orange;
+  display: block;
 }
 .slick-next::before {
-  font-family: "Font Awesome 5 Free ";
-  content: "\f1ea";
-  font-size: 22px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f35a";
+  font-size: 4rem;
+  color: $orange;
+  display: block;
+}
+
+.slick-next,
+.slick-prev {
+  top: 50px;
 }
