@@ -1,9 +1,11 @@
 .bestseller {
   min-height: 100vh;
+
   &__item {
     min-height: 75vh;
   }
   &__item__grid {
+    overflow: hidden;
     grid-template-columns: 1fr 1fr;
   }
 
